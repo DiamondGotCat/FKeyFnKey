@@ -1,0 +1,6 @@
+#c::Send "^c"
+^c::Send "#c"
+#v::Send "^v"
+^v::Send "#v"
+#a::Send "^a"
+^a::Send "#a"
