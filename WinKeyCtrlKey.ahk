@@ -19,4 +19,4 @@ $^z:: Send "#z"
 $#y:: Send "^y"
 $^y:: Send "#y"
 
-$^+z:: Send "^y"
+$#+z:: Send "^y"
