@@ -1,0 +1,2 @@
+# FKeyFnKey
+macOSのFnキーの動作のように、WindowsでもAltキーでFn+F1~F12をするためのAutoHotkey v2スクリプト
