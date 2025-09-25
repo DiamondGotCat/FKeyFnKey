@@ -21,4 +21,21 @@ macOSのFnキーの動作のように、WindowsでもAltキーでFn+F1~F12をす
 
 ## その他の機能
 - ちょっとしたオマケ機能で、作り途中ですがワンタッチ切り替え機能をつけてます
-- WinKeyCtrlKeyっていう、Ctrl+{C|V|A}とWin+{C|V|A}を置き換えるスクリプトも追加しました
+
+# WinKeyCtrlKey
+おまけ程度ですが、WinKeyCtrlKeyというスクリプトも作ってみました。
+
+## Win-as-Ctrl Ctrl-as-Win
+- **Win+C:** **Ctrl+C**を送信
+- **Ctrl+C:** **Win+C**を送信
+
+Win+{}をCtrl+{}に置き換えます。<br>
+C,V,A,S,Z,Shift+Z,Yがこれに当てはまります。
+
+## ショートカット機能
+- **Win+Shift+Z:** Ctrl+Y
+
+ただのショートカット機能です。<br>
+macOSでは、Command+Shift+Zがやり直し(Ctrl+Zの逆)なので、<br>
+Commandと同じ場所なWinでも同じことができるようにしています。<br>
+ちなみにWindowsでMagic Keyboardを使うとそのままCommandで使用できます。
