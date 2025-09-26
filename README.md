@@ -26,9 +26,6 @@ macOSのFnキーの動作のように、WindowsでもAltキーでFn+F1~F12をす
 おまけ程度ですが、WinKeyCtrlKeyというスクリプトも作ってみました。
 
 ## Win-as-Ctrl Ctrl-as-Win
-- **Win+C:** **Ctrl+C**を送信
-- **Ctrl+C:** **Win+C**を送信
-
 Win+{}をCtrl+{}に置き換えます。<br>
 C,V,A,S,Z,Shift+Z,Yがこれに当てはまります。
 
