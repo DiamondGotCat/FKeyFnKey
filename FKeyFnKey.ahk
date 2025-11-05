@@ -1,13 +1,5 @@
-DecreaseBrightness() {
-    DllCall("user32.dll\SendBrightness", "uint", -5)
-}
-
-IncreaseBrightness() {
-    DllCall("user32.dll\SendBrightness", "uint", 5)
-}
-
-F1::  DecreaseBrightness()       ; 明るさ ↓
-F2::  IncreaseBrightness()       ; 明るさ ↑
+﻿F1::  Send "{Brightness_Down}"   ; 明るさ ↓
+F2::  Send "{Brightness_Up}"     ; 明るさ ↑
 F3::  Return                     ; 何もしない
 F4::  Return                     ; 何もしない
 F5::  Return                     ; 何もしない
@@ -35,10 +27,10 @@ F12:: Send "{Volume_Up}"         ; 音量 ↑
 ^!F12::{
     static on := true
     on := !on
-    for k in ["F1","F2","F3","F4","F5","F6","F7","F8","F9","F10","F11","F12", "!F1","!F2","!F3","!F4","!F5","!F6","!F7","!F8","!F9","!F10","!F11","!F12"] {
+    for k in ["F1","F2","F3","F4","F5","F6","F7","F8","F9","F10","F11","F12"
+            , "!F1","!F2","!F3","!F4","!F5","!F6","!F7","!F8","!F9","!F10","!F11","!F12"] {
         Hotkey k, on ? "On" : "Off"
     }
     ToolTip(on ? "Fn-like mapping: ON" : "Fn-like mapping: OFF")
     SetTimer(() => ToolTip(), -1000)
 }
-
