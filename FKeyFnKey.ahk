@@ -1,15 +1,22 @@
-﻿F1::  Send "{Brightness_Down}"   ; 明るさ ↓
-F2::  Send "{Brightness_Up}"     ; 明るさ ↑
-F3::  Return                     ; 何もしない
-F4::  Return                     ; 何もしない
-F5::  Return                     ; 何もしない
-F6::  Return                     ; 何もしない
-F7::  Send "{Media_Prev}"        ; 再生：最初/前の曲
-F8::  Send "{Media_Play_Pause}"  ; 再生：再開/一時停止
-F9::  Send "{Media_Next}"        ; 再生：最後までスキップして次
-F10:: Send "{Volume_Mute}"       ; 音量：ミュート/解除
-F11:: Send "{Volume_Down}"       ; 音量 ↓
-F12:: Send "{Volume_Up}"         ; 音量 ↑
+﻿; ╭──────────────────────────────────────╮
+; │ FKeyFnKey.ahk on FKeyFnKey           │
+; │ Nercone <nercone@diamondgotcat.net>  │
+; │ Made by Nercone / MIT License        │
+; │ Copyright (c) 2025 DiamondGotCat     │
+; ╰──────────────────────────────────────╯
+
+F1::  Return                    ; 割り当てなし
+F2::  Return                    ; 割り当てなし
+F3::  Return                    ; 割り当てなし
+F4::  Return                    ; 割り当てなし
+F5::  Return                    ; 割り当てなし
+F6::  Return                    ; 割り当てなし
+F7::  Send "{Media_Prev}"       ; 最初または前の曲に戻す
+F8::  Send "{Media_Play_Pause}" ; 再開/一時停止
+F9::  Send "{Media_Next}"       ; 最後までスキップして次の曲へ
+F10:: Send "{Volume_Mute}"      ; ミュート/ミュート解除
+F11:: Send "{Volume_Down}"      ; 音量を下げる
+F12:: Send "{Volume_Up}"        ; 音量を上げる
 
 !F1::  Send "{F1}"
 !F2::  Send "{F2}"
@@ -23,14 +30,3 @@ F12:: Send "{Volume_Up}"         ; 音量 ↑
 !F10:: Send "{F10}"
 !F11:: Send "{F11}"
 !F12:: Send "{F12}"
-
-^!F12::{
-    static on := true
-    on := !on
-    for k in ["F1","F2","F3","F4","F5","F6","F7","F8","F9","F10","F11","F12"
-            , "!F1","!F2","!F3","!F4","!F5","!F6","!F7","!F8","!F9","!F10","!F11","!F12"] {
-        Hotkey k, on ? "On" : "Off"
-    }
-    ToolTip(on ? "Fn-like mapping: ON" : "Fn-like mapping: OFF")
-    SetTimer(() => ToolTip(), -1000)
-}

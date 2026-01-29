@@ -1,15 +1,11 @@
 ; ╭──────────────────────────────────────╮
-; │ WinKeyCtrlKey.ahk on FKeyFnKey       │
+; │ UpScrollDownScroll.ahk on FKeyFnKey  │
 ; │ Nercone <nercone@diamondgotcat.net>  │
 ; │ Made by Nercone / MIT License        │
 ; │ Copyright (c) 2025 DiamondGotCat     │
 ; ╰──────────────────────────────────────╯
 
-$#c::  Send "^c"
-$#v::  Send "^v"
-$#a::  Send "^a"
-$#s::  Send "^s"
-$#+s:: Send "^+s"
-$#z::  Send "^z"
-$#y::  Send "^y"
-$#+z:: Send "^y"
+WheelUp::Send "{WheelDown}"
+WheelDown::Send "{WheelUp}"
+WheelLeft::Send "{WheelRight}"
+WheelRight::Send "{WheelLeft}"
