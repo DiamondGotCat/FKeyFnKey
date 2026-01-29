@@ -1,5 +1,5 @@
 
-<img width="1920" src="https://github.com/user-attachments/assets/95939e2f-6b97-4fc2-931e-725d0d6fa817" />
+<img width="1920" src="https://github.com/user-attachments/assets/249759b7-890f-45b3-a134-6bf48f4c223b" />
 
 # FKeyFnKey
 WindowsでもmacOSと同じ感覚でマウス/キーボードを使うためのAutoHotkey v2スクリプトたち<br>
