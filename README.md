@@ -1,7 +1,8 @@
 
-<img width="1920" src="https://github.com/user-attachments/assets/249759b7-890f-45b3-a134-6bf48f4c223b" />
+<img width="1920" src="https://github.com/user-attachments/assets/4b3e3ff7-ab07-49be-adf4-2df4bde6ad46" />
 
 # FKeyFnKey
+
 WindowsでもmacOSと同じ感覚でマウス/キーボードを使うためのAutoHotkey v2スクリプトたち<br>
 Magic KeyboardをUSB接続して使うとmacOSとほぼ同じように使用できます。
 
