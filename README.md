@@ -1,6 +1,6 @@
 # FKeyFnKey
-macOSのFnキーの動作のように、WindowsでもAltキーでFn+F1~F12をするためのAutoHotkey v2スクリプト
-WindowsでMagic Keyboardを使うとFnキーとAltキーのところを除きmacOSとほぼ同じように使えます
+WindowsでもmacOSと同じ感覚でキーボードを使うためのAutoHotkey v2スクリプトたち
+Magic KeyboardをUSB接続して使うとmacOSとほぼ同じように使用できます。
 
 ## 動作
 - **F1~12のみの場合:** 特殊機能を起動します (機能の割り当ては後述)
@@ -21,10 +21,10 @@ WindowsでMagic Keyboardを使うとFnキーとAltキーのところを除きmac
 - **F12:** 音量を上げる
 
 ## WinKeyCtrlKey
-Win+CをCtrl+C、Win+VをCtrl+V、のように置き換えます。<br>
+Win+CをCtrl+C、Win+VをCtrl+V、のように置き換えるためのおまけスクリプト<br>
 現状C(コピー)、V(ペースト)、A(テキスト全選択)、S(保存)、Z(取り消し)、Y(やり直し)、Shift+Z(同じくやり直し)に対応しています。<br>
 macOSではCommand+Shift+Zがやり直しになっているので、Shift+Zでもやり直しを行えるようにしています。<br>
 ちなみにMagic KeyboardではCommandキーがWinキーとして認識されるため、macOSと完全に同じように使用できます。
 
 ## UpScrollDownScroll
-スクロールの方向を反転させます。
+スクロールの方向を反転させるためのおまけスクリプト
